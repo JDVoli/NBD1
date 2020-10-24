@@ -88,6 +88,16 @@ object Main {
 
   }
 
+  def zad5() : Unit = {
+    println("====== ZADANIE 5 ======")
+
+    val cena_wyjsciowa = Map("czekolada"-> 4, "salami" -> 26, "sushi" -> 100, "nalewka" ->20)
+    val cena_promocyjna = cena_wyjsciowa.transform((_, v) => v * 0.9)
+
+    println("Cena wyjściowa: " + cena_wyjsciowa)
+    println("Cena promocyjna: " + cena_promocyjna)
+  }
+
 
 
   def main(args: Array[String]){
@@ -108,6 +118,8 @@ object Main {
     println(zad4b())
 
     println(zad4c())
+
+    zad5()
   }
 
 }
