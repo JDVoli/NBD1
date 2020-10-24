@@ -98,6 +98,13 @@ object Main {
     println("Cena promocyjna: " + cena_promocyjna)
   }
 
+  def zad6(t: (Char,String, Int)) : Unit ={
+    println("====== ZADANIE 6 ======")
+
+    println(t)
+  }
+
+
 
 
   def main(args: Array[String]){
@@ -120,6 +127,11 @@ object Main {
     println(zad4c())
 
     zad5()
+
+    var tuple = ('a', "Ulu mulu", 21)
+    zad6(tuple)
+
+
   }
 
 }
