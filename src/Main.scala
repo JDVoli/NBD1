@@ -140,6 +140,17 @@ object Main {
   }
 
 
+  def zad10(inputL : List[Double]) : List[Double] = {
+    println("====== ZADANIE 10 ======")
+    var l1 = -5
+    var l2 = 12
+
+    inputL.filter(_ >= l1)
+      .filter(_ <= l2)
+      .map(x => x.abs)
+  }
+
+
 
 
   def main(args: Array[String]){
@@ -174,7 +185,8 @@ object Main {
     var numList = List(20,36,1,3,99,0,4)
     println(zad9(numList))
 
-
+    var lastList = List(-1000, -5, -5.2, -4.9, -7, 6,2,1,33,79,0,1.6,3.54,12, -3, -2.45, 8.4,12.1)
+    println(zad10(lastList))
   }
 
 }
