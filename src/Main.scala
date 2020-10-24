@@ -133,6 +133,12 @@ object Main {
 
   }
 
+  def zad9(inputList : List[Int]): List[Int] = {
+    println("====== ZADANIE 9 ======")
+
+    inputList.map(x => x + 1)
+  }
+
 
 
 
@@ -164,6 +170,9 @@ object Main {
 
     var listWithZeros = List(0,1,0,2,0,0,3,0,4,0,5,0,0,6,0,7,0,8,0,9,0,10)
     println(zad8(listWithZeros))
+
+    var numList = List(20,36,1,3,99,0,4)
+    println(zad9(numList))
 
 
   }
