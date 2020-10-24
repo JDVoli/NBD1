@@ -66,6 +66,27 @@ object Main {
     zad3rek(list,"")
   }
 
+  def zad4a(): String = {
+    println("====== ZADANIE 4A ======")
+
+    list.foldLeft("")((a, b) => a + b + ", ").dropRight(2)
+
+  }
+
+  def zad4b(): String = {
+    println("====== ZADANIE 4B ======")
+
+    list.foldRight("")((a, b) => a + ", " + b).dropRight(2)
+
+  }
+
+  def zad4c(): String = {
+    println("====== ZADANIE 4C ======")
+
+
+    list.filter(day => day.startsWith("P")).foldLeft(""){(b,a) => b + a + ", "}.dropRight(2)
+
+  }
 
 
 
@@ -81,6 +102,12 @@ object Main {
     println(zad2b())
 
     println(zad3())
+
+    println(zad4a())
+
+    println(zad4b())
+
+    println(zad4c())
   }
 
 }
