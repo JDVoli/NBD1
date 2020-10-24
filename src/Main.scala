@@ -104,6 +104,20 @@ object Main {
     println(t)
   }
 
+  def zad7() : Unit =  {
+    println("====== ZADANIE 7 ======")
+
+    val cena_wyjsciowa = Map("czekolada"-> 4, "salami" -> 26, "sushi" -> 100, "nalewka" ->20)
+
+    println("Szukane - sushi. Wynik: " + zad7_option(cena_wyjsciowa.get("sushi")))
+    println("Szukane - sake. Wynik: " + zad7_option(cena_wyjsciowa.get("sake")))
+  }
+
+  def zad7_option(x: Option[Any]) = x match {
+    case Some(a) =>"znaleziono: "+ a
+    case None => "nie znaleziono szukanego klucza"
+  }
+
 
 
 
@@ -130,6 +144,8 @@ object Main {
 
     var tuple = ('a', "Ulu mulu", 21)
     zad6(tuple)
+
+    zad7()
 
 
   }
